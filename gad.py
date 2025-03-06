@@ -120,29 +120,6 @@ col1, col2, col3 = st.columns([1, 1, 1])
 txt='למה לבחור בנו?'
 st.markdown(f'<div style="direction:rtl;font-size:1em;font-weight:bold;text-align: center;">{txt}</div>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1, 1, 1])
-# with col1:
-#     with st.container(border=True, height=300):
-#         st.image('hanaa.png', width=300, use_container_width="always")
-#         st.write('**הנאה צרופה**')
-#         st.write('        ')
-#         st.write('        ')
-#         txt = 'חוויה מהנה ובלתי נשכחת שתגרום לכם לצחוק להנות ולהתחבר יחד.'
-#         st.markdown(f'<div style="direction:rtl;font-size:1em;color:gray;background-color:yellow;">{txt}</div>', unsafe_allow_html=True)
-# with col2:
-#     with st.container(border=True, height=300):
-#         st.image('havaia.png', width=300, use_container_width="always")
-#         st.write('**חוויה אינטלוקטואלית מעצימה ומגבשת**')
-#         # st.write('        ')
-#         txt = 'פיתוח חשיבה יצירתית עבודת צוות ופתרון בעיות מורכבות בדרך מהנה ומאתגרת.'
-#         st.markdown(f'<div style="direction:rtl;font-size:1em;color:gray;background-color:cyan;">{txt}</div>', unsafe_allow_html=True)
-# with col3:
-#     with st.container(border=True, height=300):
-#         st.image('haham.png', use_container_width="always")
-#         st.write('**משחקי חברה חכמים ומעניינים**')
-#         st.write('    ')
-#         st.write('    ')
-#         txt = 'מגוון רחב של משחקים חברתיים המשלבים איסטרטגיה יצירתיות ואינטרקציה חברתית.'
-#         st.markdown(f'<div style="direction:rtl;font-size:1em;color:gray;background-color:greenyellow;">{txt}</div>', unsafe_allow_html=True)
 c1_pic,c1_wrt1,c1_wrt2,c1_wrt3,c1_mrkdn1=setup_container(col1)
 img='hanaa.png'
 txt1='הנאה צרופה'
