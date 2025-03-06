@@ -123,8 +123,8 @@ col1, col2, col3 = st.columns([1, 1, 1])
 c1_pic,c1_wrt1,c1_wrt2,c1_wrt3,c1_mrkdn1=setup_container(col1)
 img='hanaa.png'
 txt1='הנאה צרופה'
-txt2=' '
-txt3=' '
+txt2=''
+txt3=''
 txt4='חוויה מהנה ובלתי נשכחת שתגרום לכם לצחוק להנות ולהתחבר יחד.'
 fill_container(c1_pic,c1_wrt1,c1_wrt2,c1_wrt3,c1_mrkdn1,img,txt1,txt2,txt3,txt4,'yellow')
 c2_pic,c2_wrt1,c2_wrt2,c2_wrt3,c2_mrkdn1=setup_container(col2)
