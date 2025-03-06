@@ -136,7 +136,7 @@ txt4='פיתוח חשיבה יצירתית עבודת צוות ופתרון בע
 fill_container(c2_pic,c2_wrt1,c2_wrt2,c2_wrt3,c2_mrkdn1,img,txt1,txt2,txt3,txt4,'cyan')
 c3_pic,c3_wrt1,c3_wrt2,c3_wrt3,c3_mrkdn1=setup_container(col3)
 img='haham.png'
-txt1='משחקי חברה חכמים ומעניינים'
+txt1='משחקי חברה חכמים ומענינים'
 txt2=''
 txt3=''
 txt4='מגוון רחב של משחקים חברתיים המשלבים איסטרטגיה יצירתיות ואינטרקציה חברתית.'
