@@ -138,7 +138,7 @@ c3_pic,c3_wrt1,c3_wrt2,c3_wrt3,c3_mrkdn1=setup_container(col3)
 img='haham.png'
 txt1='משחקי חברה חכמים ומענינים'
 txt2=''
-txt3=''
+# txt3=''
 txt4='מגוון רחב של משחקים חברתיים המשלבים איסטרטגיה יצירתיות ואינטרקציה חברתית.'
 fill_container(c3_pic,c3_wrt1,c3_wrt2,c3_wrt3,c3_mrkdn1,img,txt1,txt2,txt3,txt4,'greenyellow')
 col1,col2,col3=st.columns([2,1,2])
