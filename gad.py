@@ -95,9 +95,9 @@ def setup_container(col):
             mrkdn=st.empty()
     return pic,wrt1,wrt2,wrt3,mrkdn
 
-def fill_container(pic,wrt1,wrt2,wrt3,mrkdn,img,txt1,txt2,txt3,txt4,color,width=300):
+def fill_container(pic,wrt1,wrt2,wrt3,mrkdn,img,txt1,txt2,txt3,txt4,color,width=300,spaces=0):
     pic.image(img,width=width, use_container_width="always")
-    wrt1.write(f'**{txt1}**')
+    wrt1.write(f'**{txt1}**{spaces*' '}')
     wrt2.write(f'{txt2}')
     wrt3.write(f'{txt3}')
     mrkdn.markdown(f'<div style="direction:rtl;font-size:1em;color:gray;background-color:{color};">{txt4}</div>', unsafe_allow_html=True)
@@ -120,27 +120,29 @@ col1, col2, col3 = st.columns([1, 1, 1])
 txt='למה לבחור בנו?'
 st.markdown(f'<div style="direction:rtl;font-size:1em;font-weight:bold;text-align: center;">{txt}</div>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1, 1, 1])
+txt11='הנאה צרופה'
+txt12='חוויה מעצימה ומגבשת'
+txt13='משחקי חברה חכמים ומענינים'
 c1_pic,c1_wrt1,c1_wrt2,c1_wrt3,c1_mrkdn1=setup_container(col1)
 img='hanaa.png'
-txt1='הנאה צרופה'
 txt2=''
 txt3=''
 txt4='חוויה מהנה ובלתי נשכחת שתגרום לכם לצחוק להנות ולהתחבר יחד.'
-fill_container(c1_pic,c1_wrt1,c1_wrt2,c1_wrt3,c1_mrkdn1,img,txt1,txt2,txt3,txt4,'yellow')
+spaces=len(txt13)-len(txt11)
+fill_container(c1_pic,c1_wrt1,c1_wrt2,c1_wrt3,c1_mrkdn1,img,txt11,txt2,txt3,txt4,'yellow',spaces=spaces)
 c2_pic,c2_wrt1,c2_wrt2,c2_wrt3,c2_mrkdn1=setup_container(col2)
 img='havaia.png'
-txt1='חוויה מעצימה ומגבשת'
 txt2=''
 txt3=''
 txt4='פיתוח חשיבה יצירתית עבודת צוות ופתרון בעיות מורכבות בדרך מהנה ומאתגרת.'
-fill_container(c2_pic,c2_wrt1,c2_wrt2,c2_wrt3,c2_mrkdn1,img,txt1,txt2,txt3,txt4,'cyan')
+spaces=len(txt13)-len(txt12)
+fill_container(c2_pic,c2_wrt1,c2_wrt2,c2_wrt3,c2_mrkdn1,img,txt12,txt2,txt3,txt4,'cyan',spaces=spaces)
 c3_pic,c3_wrt1,c3_wrt2,c3_wrt3,c3_mrkdn1=setup_container(col3)
 img='haham.png'
-txt1='משחקים חכמים ומענינים'
 txt2=''
 # txt3=''
 txt4='מגוון רחב של משחקים חברתיים המשלבים איסטרטגיה יצירתיות ואינטרקציה חברתית.'
-fill_container(c3_pic,c3_wrt1,c3_wrt2,c3_wrt3,c3_mrkdn1,img,txt1,txt2,txt3,txt4,'greenyellow')
+fill_container(c3_pic,c3_wrt1,c3_wrt2,c3_wrt3,c3_mrkdn1,img,txt13,txt2,txt3,txt4,'greenyellow')
 col1,col2,col3=st.columns([2,1,2])
 content=col2.toggle('מה יש לנו להציע?')
 if content:
