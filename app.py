@@ -115,7 +115,7 @@ col1, col2, col3 = st.columns([1.32, 2, 1.32])
 col2.header(':flag-il: :rainbow[Puzzle Mind] :flag-il:', divider=True)
 col1, col2 = st.columns([1, 1])
 col1.subheader(' פאזל מיינד מציעה משחקי חשיבה מאתגרים המפתחים יכולות קוגנטיביות ומחזקים את הזיכרון. המשחקים מציעים מגוון רחב של אתגרים המותאמים לכל הרמות והגילים.')
-col2.image("assets/images/mankhe.png")
+col2.image("assets/assets/images/mankhe.png")
 col1.write('ליצירת קשר אנא צרף אימייל')
 col3, col4 = st.columns([1, 4])
 receiver = col4.text_input(' ', label_visibility='collapsed')
@@ -132,21 +132,21 @@ txt11 = 'הנאה צרופה'
 txt12 = 'חוויה מעצימה ומגבשת'
 txt13 = 'משחקי חברה חכמים ומענינים'
 c1_pic, c1_wrt1, c1_wrt2, c1_wrt3, c1_mrkdn1 = setup_container(col1)
-img = 'assets/images/hanaa.png'
+img = 'assets/assets/images/hanaa.png'
 txt2 = ''
 txt3 = ''
 txt4 = 'חוויה מהנה ובלתי נשכחת שתגרום לכם לצחוק להנות ולהתחבר יחד.'
 spaces = len(txt13) - len(txt11)
 fill_container(c1_pic, c1_wrt1, c1_wrt2, c1_wrt3, c1_mrkdn1, img, txt11, txt2, txt3, txt4, 'yellow', spaces=spaces)
 c2_pic, c2_wrt1, c2_wrt2, c2_wrt3, c2_mrkdn1 = setup_container(col2)
-img = 'assets/images/havaia.png'
+img = 'assets/assets/images/havaia.png'
 txt2 = ''
 txt3 = ''
 txt4 = 'פיתוח חשיבה יצירתית עבודת צוות ופתרון בעיות מורכבות בדרך מהנה ומאתגרת.'
 spaces = len(txt13) - len(txt12)
 fill_container(c2_pic, c2_wrt1, c2_wrt2, c2_wrt3, c2_mrkdn1, img, txt12, txt2, txt3, txt4, 'cyan', spaces=spaces)
 c3_pic, c3_wrt1, c3_wrt2, c3_wrt3, c3_mrkdn1 = setup_container(col3)
-img = 'assets/images/haham.png'
+img = 'assets/assets/images/haham.png'
 txt2 = ''
 # txt3=''
 txt4 = 'מגוון רחב של משחקים חברתיים המשלבים איסטרטגיה יצירתיות ואינטרקציה חברתית.'
@@ -157,21 +157,21 @@ col1, col2, col3 = st.columns([2, 3, 2])
 options = ['תשבץ הגיון', 'זיהוי דמות', 'זיהוי מקום']
 res = col2.segmented_control('המשחקים שלנו', options=options)
 if res == 'תשבץ הגיון':
-    img = 'assets/images/higayon.png'
+    img = 'assets/assets/images/higayon.png'
     txt1 = 'תשבץ הגיון'
     txt2 = ''
     txt3 = ''
     txt4 = 'תשבץ הגיון מבוסס הקשר לארוע מסוים או לקבוצה מסוימת מוקרן על מסך גדול המנצח הינו זה הפותר את מירב ההגדרות.'
     fill_container(c1_pic, c1_wrt1, c1_wrt2, c1_wrt3, c1_mrkdn1, img, txt1, txt2, txt3, txt4, 'yellow', 200)
 if res == 'זיהוי דמות':
-    img = 'assets/images/mi.png'
+    img = 'assets/assets/images/mi.png'
     txt1 = 'מי הדמות'
     txt2 = ''
     txt3 = ''
     txt4 = 'פלטפורמה של משחקים שבה המשתמש כותב חידה על דמות בטלפון החידה מוקרנת על מסך גדול ושאר המשתתפים פותרים כל חידה בתורה המנצח הינו זה שזיהה את מירב הדמויות .'
     fill_container(c2_pic, c2_wrt1, c2_wrt2, c2_wrt3, c2_mrkdn1, img, txt1, txt2, txt3, txt4, 'cyan', 200)
 if res == 'זיהוי מקום':
-    img = 'assets/images/place.png'
+    img = 'assets/assets/images/place.png'
     txt1 = 'זיהוי מקום'
     txt2 = ''
     txt3 = ''
